@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="access-admin-panel">
+      <form class="access-admin-panel-form">
+        <input class="input-password" type="password" name='admin-password' placeholder="Podaj hasło administratora">
+        <button type="submit" class="admin-pass-btn">Log in</button>
+
+      </form>
+      <div class="basket-icon-wraper">
+        <div class="basket-content-number"></div>
+        <i class="basket-button fas fa-shopping-cart"></i>
+      </div>
+    </div>
+  </header>
+  <div class="wraper">
+    <section class="basket">
+      <h1>Basket</h1>
+      <ul class="shop-basket-list">
+      </ul>
+      <button class="buy-all" disabled> Submit an order</button>
+    </section>
+    <div class="content">
+      <div class="main-header-img">
+        <h1 class="main-header-h1">Beaty Shop</h1>
+        <h2 class="main-header-h2">Come and visit us</h2>
+      </div>
+      <section class="products">
+        <h1>Perfumes & Cosmetics</h1>
+        <ul class="products-list">
+          <li><strong>Wild Rose</strong>99.99zł
+            <button class="buy-product" data-name="Wild Rose" data-price="99.99">Buy
+            </button>
+          </li>
+          <li><strong>Fresh Sea Salt</strong>120.05zł
+            <button class="buy-product" data-name="Fresh Sea Salt" data-price="120.05">Buy</button>
+          </li>
+          <li><strong>Red Fruits Lipstick</strong>100.45zł
+            <button class="buy-product" data-name="Red Fruits Lipstick" data-price="100.45">Buy
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="admin">
+        <h1 class="admin-form-h1">Administraction: Log in to add products (password: password)</h1>
+        <form class="admin-form">
+          <input type="text" name="product-name" placeholder="Podaj nazwę..." required>
+          <input type="number" name="product-price" step="0.01" placeholder="Podaj cenę..." required>
+          <button class="submit" type="submit">Add</button>
+        </form>
+      </section>
+    </div>
+  </div>
+  <script src="src/basket.js"></script>
+  <script src="src/ui.js"></script>
+  <script src="src/shop.js"></script>
+  <script src="src/admin-ui.js"></script>
+
+</body>
+
+</html>

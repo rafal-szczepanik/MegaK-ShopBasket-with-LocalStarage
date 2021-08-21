@@ -1,267 +1,281 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0 auto;
-    font-family: roboto, sans-serif;
-    color: white;
-    background-color: rgba(201, 191, 201,0.1);
+  margin: 0 auto;
+  font-family: roboto, sans-serif;
+  color: white;
+  background-color: rgba(201, 191, 201, 0.1);
 }
 
 .access-admin-panel {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    background-color: rgb(87, 69, 87);
-    /*background-color: #444;*/
-    box-shadow: 0 4px 10px gray;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(87, 69, 87);
+  box-shadow: 0 4px 10px gray;
+  z-index: 999;
 }
 
 .input-password {
-    margin-left: 20px;
-    padding: 5px 10px;
+  margin-left: 20px;
+  padding: 5px 10px;
 }
 
 .main-header-h1,
 .main-header-h2 {
-
-    position: relative;
-    opacity: 0.95;
-    z-index: 998;
-
-
+  position: relative;
+  opacity: 0.95;
+  z-index: 998;
 }
 
 .main-header-h2 {
-    line-height: 60px;
-    font-size: 30px;
+  line-height: 60px;
+  font-size: 30px;
 }
 
 .main-header-h1 {
-    background-color: transparent;
-    line-height: 60px;
-    /*margin-top: 70px;*/
-    font-size: 50px;
+  background-color: transparent;
+  line-height: 60px;
+  font-size: 50px;
 }
 
 .main-header-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 80px;
-    padding-top: -80px;
-    height: 160px;
-    width: 100%;
-    background-image: url('./img/woman-3040029_1920.jpg');
-    /*background-attachment: fixed;*/
-    background-position: center;
-    background-size: cover;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 80px;
+  padding-top: -80px;
+  height: 160px;
+  width: 100%;
+  background-image: url("./img/woman-3040029_1920.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .main-header-img::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    /*z-index: 999;*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-
 section {
-    text-align: center;
-    margin: 20px auto;
+  text-align: center;
+  margin: 20px auto;
 }
 
 section h1 {
-    margin-bottom: 5%;
-    color: rgb(61, 49, 61);
-    background-color: rgb(201, 190, 201);
-
-    /*background: rgba(0, 0, 0, 0.1);*/
-    text-align: center;
-    line-height: 50px;
+  padding: 5px;
+  margin-bottom: 5%;
+  color: rgb(61, 49, 61);
+  background-color: rgb(201, 190, 201);
+  text-align: center;
+  line-height: 50px;
 }
 
 ul {
-    display: flex;
-    /*justify-content: center;*/
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  /*justify-content: center;*/
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .products {
-    max-height: 45vh;
-    overflow: scroll;
+  max-height: 45vh;
+  overflow: scroll;
 }
 
 .products li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 180px;
-    width: 170px;
-    margin: 10px 10px;
-    padding: 5px;
-    color: black;
-    background-color: rgba(201, 191, 201, 0.41);
-    /*background: rgba(186, 186, 224, 0.53);*/
-    border: 1px solid rgb(61, 49, 61);
-    line-height: 20px;
-    text-align: center;
-    list-style: none;
-    transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+  width: 170px;
+  margin: 10px 10px;
+  padding: 5px;
+  color: black;
+  background-color: rgba(201, 191, 201, 0.41);
+  border: 1px solid rgb(61, 49, 61);
+  line-height: 20px;
+  text-align: center;
+  list-style: none;
+  transition: 0.2s;
 }
 
 .basket li {
-    margin: 0 auto;
-    line-height: 30px;
-    width: 90%;
-    text-align: center;
-    font-weight: 700;
-    color: black;
-    list-style: none;
-    background-color: transparent;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity ease 0s;
+  margin: 0 auto;
+  line-height: 30px;
+  width: 90%;
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  list-style: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity ease 0s;
 }
 
 .basket button {
-    opacity: 0;
-    transition: opacity ease 0s;
+  opacity: 0;
+  transition: opacity ease 0s;
 }
 
 li.visible,
 button.visible {
-    opacity: 1;
-    transition: opacity ease 0.5s; /*display: block;*/
+  opacity: 1;
+  transition: opacity ease 0.5s; /*display: block;*/
 }
 
 .basket li:hover {
-    background-color: #ddd;
-
+  background-color: #ddd;
 }
 .products li:hover {
-    box-shadow: 1px 1px 5px rgb(61, 49, 61), -1px -1px 5px rgb(61, 49, 61);
+  box-shadow: 1px 1px 5px rgb(61, 49, 61), -1px -1px 5px rgb(61, 49, 61);
 }
 
 button {
-    padding: 8px 25px;
-    border: 1px solid white;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    background-color: #666;
-    border-radius: 45px 45px;
-    transition: all ease 0.2s;
-    cursor: pointer;
+  padding: 8px 25px;
+  border: 1px solid white;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #666;
+  border-radius: 45px 45px;
+  transition: all ease 0.2s;
+  cursor: pointer;
 }
 
 button:hover {
-    color: rgb(61, 49, 61);
-    border: 1px solid #444;
-    background-color: white;
+  color: rgb(61, 49, 61);
+  border: 1px solid #444;
+  background-color: white;
 }
 
 .admin-form {
-    display: none;
+  display: none;
 }
 
 .visible-admin {
-    display: block;
+  display: block;
 }
 
 .admin-form input {
-    padding: 5px 15px;
+  padding: 5px 15px;
 }
 
 .content {
-    min-height: 100vh;
-    margin: 0px auto;
-    width: 76%;
-    background-color: #fff;
+  min-height: 100vh;
+  margin: 0px auto;
+  width: 76%;
+  background-color: #fff;
 }
 
 .basket-icon-wraper {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 i {
-    font-size: 30px;
-    margin-right: 20px;
-    transition: 0.2s;
-    cursor: pointer;
+  font-size: 30px;
+  margin-right: 20px;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 i:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .basket-content-number {
-    display: none;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    font-family: arial;
-    background-color: orange;
-    font-size: 10px;
-    text-align: center;
-    line-height: 14px;
-    outline: none;
+  display: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  font-family: arial;
+  background-color: orange;
+  font-size: 10px;
+  text-align: center;
+  line-height: 14px;
+  outline: none;
 }
 
 .basket {
-    margin: 0;
-    max-width: 0;
-    width: 25%;
-    height: 100vh;
-    overflow: hidden;
-    overflow: scroll;
-    opacity: 0;
-    transition: 0.5s ease-out;
-    background: white;
-    box-shadow: -5px 1px 5px 1px #444;
+  margin: 0;
+  max-width: 0;
+  width: 25%;
+  height: 100vh;
+  overflow: hidden;
+  overflow: scroll;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  background: white;
+  box-shadow: -5px 1px 5px 1px #444;
 }
 
 .basket-active {
-    left: 0;
-    max-width: 25%;
-    display: block;
-    opacity: 1;
+  left: 0;
+  max-width: 25%;
+  display: block;
+  opacity: 1;
 }
 
 .basket h1 {
-    margin-top: 50px;
-    background-color: transparent;
-    color: black;
+  margin-top: 50px;
+  background-color: transparent;
+  color: black;
 }
 
-
 .basket button:hover {
-    color: white;
-    background-color: #111;
+  color: white;
+  background-color: #111;
 }
 
 .wraper {
-    display: flex;
+  display: flex;
 }
 
-
-
+@media (max-width: 700px) {
+  .main-header-h2 {
+    line-height: 40px;
+    font-size: 25px;
+  }
+  .main-header-h1 {
+    line-height: 40px;
+    font-size: 40px;
+  }
+  section h1 {
+    line-height: 25px;
+    font-size: 18px;
+  }
+  button {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+  .input-password {
+    margin-left: 5px;
+    padding: 5px 0;
+  }
+  .products-list {
+    justify-content: center;
+  }
+  .products li {
+    height: 150px;
+    width: 140px;
+  }
+}

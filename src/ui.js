@@ -65,7 +65,6 @@ showLi = () => {
 };
 
 const buyProduct = ({ target }) => {
-  console.log("ok");
   const name = target.dataset.name;
   const price = Number(target.dataset.price);
   const newProduct = new Product(name, price);

@@ -17,11 +17,11 @@ showAdminPanel = (e) => {
   e.preventDefault();
   if (adminInputPassword.value === "password") {
     adminPanel.classList.add("visible-admin");
-    adminFormText.innerText = `Administracja: Hasło poprawne, masz dostęp do panelu`;
+    adminFormText.innerText = `Admin Panel: You have entered correct password. Now you can add a new product`;
   } else if (adminInputPassword.value === "close") {
     adminPanel.classList.remove("visible-admin");
   } else {
-    alert("niepoprawne hasło");
+    alert("password incorrect");
   }
   adminInputPassword.value = "";
 };
